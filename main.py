@@ -2,7 +2,6 @@ from menu import Menu
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
-# THIS IS COFFEEMACHINE PROGRAM
 
 order = Menu()
 money = MoneyMachine()
@@ -21,3 +20,5 @@ while is_on:
     else:
         if coffee.is_resource_sufficient(drink) and money.make_payment(drink.cost):
             coffee.make_coffee(drink)
+        # else: 
+        #     coffee.is_resource_sufficient(drink)
